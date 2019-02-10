@@ -3,11 +3,18 @@
 
 int main()
 {
-    int day = 10;
-    int month = 0;
-    int month2 = 2;
-    int years = 2019;
-    int myAge = 17;
-    printf("J'ai actuellement le %d/%d%d/%d : %d ans\n", day,month,month2,years,myAge);
-    return 0;
+  int A = 0;
+  printf("Choisir un nombre ?\n");
+  scanf("%d", &A);
+  printf("Choisir un diviseur de %d ?\n", A);
+  int B = 0;
+  scanf("%d", &B);
+  printf("\nDivision euclidienne de %d par %d :\n", A,B);
+  int quotient = 0;
+  quotient = A/B;
+  printf("Quotient : 0%d\n", quotient);
+  int reste = 0;
+  reste = A%B;
+  printf("Reste : %d\n", reste);
+  return 0;
 }
